@@ -2,6 +2,7 @@
 
 <p><%= link_to "Create new article", new_article_path %></p>
 
+<% if @articles.count > 0 %>
 <table>
   <tr>
     <th>Title</th>
@@ -20,3 +21,6 @@
   <% end %>
   </tbody>
 </table>
+<% else %>
+    <h2>There is not any article yet</h2>
+<% end %>
