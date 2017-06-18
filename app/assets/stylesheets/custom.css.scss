@@ -1,2 +1,31 @@
+$navbar-default-bg: #303F9F;
+$navbar-default-link-color: white;
+$navbar-default-link-hover-color: white;
+$navbar-default-link-active-color: white;
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:active,
+.navbar-default .navbar-nav > li > a:focus {
+  font-weight: bold;
+}
+
+#logo {
+  float: left;
+  font-size: 1.7em;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+#logo:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.center {
+  text-align: center;
+}
